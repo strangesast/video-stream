@@ -1,0 +1,22 @@
+{
+  "name": "Video Stream",
+  "short_name": "Video Stream",
+  "description": "Stream from linux video device to the browser with nginx / hls",
+  "display": "standalone",
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+
+  ]
+}

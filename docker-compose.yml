@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  nginx:
+    build:
+      context: .
+      network: host
+      dockerfile: nginx.Dockerfile
+    networks:
+      innernet:
+        aliases:
+          - nginx
+    ports:
+      - "8080:8080"
+      - "1935:1935"
+  ffmpeg:
+    build:
+      context: .
+      network: host
+      dockerfile: ffmpeg.Dockerfile
+    networks:
+      - innernet
+    environment:
+      - STREAM_HOST=nginx
+    devices:
+      - "/dev/video0:/dev/video0"
+networks:
+  innernet: {}

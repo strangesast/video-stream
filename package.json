@@ -1,0 +1,32 @@
+{
+  "name": "video-stream",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "serve": "webpack-dev-server --config webpack.dev.js"
+  },
+  "author": "Sam Zagrobelny <strangesast@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "hls.js": "^0.12.4"
+  },
+  "devDependencies": {
+    "@types/hls.js": "^0.12.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "html-inline-css-webpack-plugin": "^1.8.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "sass-loader": "^7.3.1",
+    "serviceworker-webpack-plugin": "^1.0.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
