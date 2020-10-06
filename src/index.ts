@@ -1,6 +1,6 @@
 import * as Hls from 'hls.js';
 
-const URL = `${window.location.origin}/hls/stream.m3u8`;
+const URL = `${window.location.origin}/hls/stream/index.m3u8`;
 const video = document.getElementById('video') as HTMLVideoElement;
 
 if(Hls.isSupported()) {
